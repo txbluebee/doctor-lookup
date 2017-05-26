@@ -9,10 +9,10 @@ $(document).ready(function(){
   var doctorObject = new Doctor();
   $('.find-doctor').click(function(){
     $('.result').text('');
-    var sympton = $('#sympton').val();
-    $('#sympton').val("");
+    var symptom = $('#symptom').val();
+    console.log(symptom);
+    $('#symptom').val("");
 
-    doctorObject.getDoctor(sympton, displayDoctor);
+    doctorObject.getDoctor(symptom, displayDoctor);
   });
-
 });
