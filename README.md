@@ -11,12 +11,9 @@ Shoe Store is web application let users enter a medical issue (ie: “sore throa
 ## Setup/Installation Requirements
 
 * Clone this repository
-* Create .gitignore file at the top level of your directory
-* Include node_modules & bower_components in .gitignore.
 * Open terminal and enter "npm install" and "bower install"
 * Visit the [BetterDoctor API](https://developer.betterdoctor.com/) site to request a free API key.
 * Place your token in an .env file and store it in an exported property named apiKey. (exports.apiKey = "Your-API-KEY";)at the top level of your directory.
-* Include .env in .gitignore.
 * Enter "gulp build" and "gulp serve" in terminal
 
 ## Technologies Used
