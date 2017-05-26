@@ -1,0 +1,22 @@
+{
+  "name": "doctor-lookup",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Brian Fan <kuomu.fan@yahoo.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "v4.0.0-alpha.6",
+    "moment": "^2.18.1"
+  }
+}
