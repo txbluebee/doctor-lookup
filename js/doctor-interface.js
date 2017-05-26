@@ -12,7 +12,7 @@ var displayDoctor = function(response){
     console.log(description);
 
     var display =
-      '<div class="col-md-4 mb-3">' +
+      '<div class="col-md-4 my-5">' +
       '<div class="card">' +
         '<img class="card-img-top" src="' + image_url + '" alt="Card image cap" style="height: 250px;">' +
         '<div class="card-block">' +
@@ -29,11 +29,11 @@ var displayDoctor = function(response){
 $(document).ready(function(){
 
   var doctorObject = new Doctor();
-  $('.find-doctor').click(function(){
+  $('#search-doctor').submit(function(event){
+    event.preventDefault();
     $('.result').text('');
     var symptom = $('#symptom').val();
     $('#symptom').val("");
-
     doctorObject.getDoctor(symptom, displayDoctor);
   });
 });

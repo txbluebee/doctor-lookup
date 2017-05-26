@@ -9,16 +9,18 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1>Doctor Lookup</h1>
+      <div class="jumbotron text-center">
+        <h1 class="display-3">Doctor Lookup</h1>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="form-group has-primary">
-            <label class="form-control-label" for="symptom"><strong>Symptom: </strong></label>
-            <input type="text" class="form-control form-control-primary" id="symptom">
-            <button class="find-doctor mt-3 btn btn-success">Find Doctor</button>
-          </div>
+          <form id="search-doctor">
+            <div class="form-group has-primary">
+              <label class="form-control-label" for="symptom"><h2>Symptom: </h2></label>
+              <input type="text" class="form-control form-control-lg  form-control-primary" id="symptom">
+            </div>
+            <button type="submit" class="find-doctor btn btn-success btn-lg">Find Doctor</button>
+          </form>
         </div>
       </div>
       <div class="row result">
